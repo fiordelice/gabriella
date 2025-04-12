@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: auto;
+    padding-top: 100px; 
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    border-bottom: 2px solid #006eff;
+    color: #006eff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .navbar h2 {
+    font-size: 1.4rem;
+    margin-right: auto;
+  }
+  
+  .navbar button {
+    margin-left: auto;
+    background: none;
+    border: 2px solid #006eff;
+    color: #006eff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .navbar button:hover {
+    background-color: #006eff;
+    color: black;
+    transition: 0.4s;
+  }
+  
+  .contato-info {
+    background-color: #000;
+    border: 2px solid #006eff;
+    border-radius: 10px;
+    padding: 1rem;
+    width: fit-content;
+    margin: 90px auto 20px;
+    color: #006eff;
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+    text-align: center;
+  }
+  
+  .contato-info a {
+    color: #00aaff;
+    text-decoration: none;
+  }
+  
+  .container {
+    background: #001f3f;
+    border: 2px solid #006eff;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 20px #006eff;
+    margin-top: 30px;
+   
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 2px solid #006eff;
+  }
+  
+  .typewriter {
+    font-size: 1.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #006eff;
+    margin-left: 3px;
+    animation: blink 0.8s infinite;
+    
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #006eff;
+    text-shadow: 0 0 10px #006eff;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 1.5rem;
+      margin: 80px 1rem 1rem;
+    }
+  
+    .typewriter {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .navbar h2 {
+      font-size: 1.2rem;
+    }
+  
+    .navbar button {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  
+  .contato-info {
+    position: fixed;
+    top: -20px;
+    top: 1px;
+    left: 40px;
+    background-color: #000;
+    border: 1px solid #006eff;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 350px;
+    color: #00aaff;
+    display: none; 
+    animation: fadeIn 0.6s ease-in-out;
+    box-shadow: 0 0 10px #006eff;
+    z-index: 999;
+    text-align: left;
+  }
+  
+  .contato-info.show {
+    display: block; 
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
