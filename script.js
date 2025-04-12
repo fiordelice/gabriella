@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Efeito máquina de escrever
-    const text = "Olá, universo do código!";
+    
+    const text = "Olá!";
     const textElement = document.getElementById("typewriter-text");
     let index = 0;
     const speed = 100;
@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const contatoInfo = document.getElementById("contato-info");
   
     botaoContato.addEventListener("click", () => {
-
+   
       contatoInfo.classList.toggle("show");
     });
   });
+
